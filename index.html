@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Andre Online Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/850b4d8c1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/Marcus.png" class="marcus">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>IT Professional</p>
+                <h1>Welcome to<br><span>Marcus'</span><br>Portfolio!!!!
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-title2">Hello everyone! My name is Marcus Andre I am 22 years old from White Plains, NY. I love all types technology, sports, games and books. I am the 3rd of 13 children. I am also detail-oriented and motivated with IT enthusiast with a passion for technology. 
+                        Eager to contribute my skills, knowledge, and dedication to any IT position. Also, I have a eagerness/williingness to learn new ideas and technologies. Currently, I am in the process of obtaining my second AWS certificate as a Soluitions Architect Associate. 
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AWS:</span><br>AWS Cloud Practioner:H5QT2HW24NVQQF3M<br> AWS Solutions Architect: In Progress</span></li>
+                            <li><span>Python</span><br>Proficiency: beginner </li>
+                            <li><span>JavaScript</span><br>Proficiency: beginner </li>
+                            <li><span>HTML, CSS, Java:</span><br>Proficiency: Intermediate </li>
+                            <li><span>Microsoft Office</span><br>Proficiency: Expert </li>
+                            <li><span>Computer Building</span><br>Proficiency: Expert </li>
+                            <li><span>Desktop Support</span><br>Proficiency: Expert </li>
+                            <li><span>PC component diagnostics</span><br>Proficiency: Intermediate </li>
+                            <li><span>Data Recoevry</span><br>Proficiency: Intermediate </li>
+                            <li><span>iOS/MacOS and Windows</span><br>Proficiency: Expert </li>
+                            <li><span>Problem Solving</span><br>Passion for solving problems. I am able to find issues and then solve them effectively</li>
+                            <li><span>Teamwork</span><br>Love working in and with teams. Willing collaborator on projects and tasks.</li>
+                            <li><span>Adaptability</span><br>Will adjust to any and every environment. Able to learn new technologies and other tasks on my own. Understands that every workplace is different.</span></li>
+                            <li><span>Time Management</span><br>Very meticulous on having a schedule. Very good at making deadlines on time without being rushed </li>
+                            <li><span>Communication</span><br>Strong communications skills verbally and written</li>
+                            <li><span>IT Support</span><br>Experience in providing technical support to end-users, troubleshooting hardware and software issues.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IT</span><br>No current IT experience</span></li>
+                            <li><span>PJs Coffee</span><br></li>August 2022 - Present
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>High Shool Diploma: 3.79 uw GPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Able to develop websites at an intermediate level.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>IT Support</h2>
+                <p>Ability to analyze, troubleshoot, evaluate, and solve technological issues</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-message"></i> mandreking23@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 914-966-9103</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/m.andre_9/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/YaGirls_House"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/marcus-andr%C3%A9-579247272/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Marcus' Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Marcus Andre </p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydodIlRmB_zwJhwJ1ej3rXnamVBXjM6TP85ZiqXqFU3ZMTXIguN6sGMApipCnMEmUL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
