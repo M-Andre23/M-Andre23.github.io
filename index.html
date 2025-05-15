@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="./images/Marcus.png" class="marcus">
+                <img src="./images/Marcus.png" class="marcus" alt="Marcus Andre">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p class="sub-title2">Hello everyone! My name is Marcus Andre I am 22 years old from White Plains, NY. I love all types technology, sports, games and books. I am the 3rd of 13 children. I am also detail-oriented and motivated with IT enthusiast with a passion for technology. 
-                        Eager to contribute my skills, knowledge, and dedication to any IT or Cloud position. Also, I have a eagerness/williingness to learn new ideas and technologies.
+                    <p class="sub-title2">Hello everyone! My name is Marcus Andre I am 22 years old from White Plains, NY. I love all different kinds of technology, sports, games and books. I am the 3rd of 13 children. I am also detail-oriented and motivated with IT enthusiast with a passion for technology. 
+                        Eager to contribute my skills, knowledge, and dedication to any IT or Cloud position. Also, I have an eagerness/williingness to learn new ideas and technologies.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>AWS:</span><br>AWS Cloud Practioner:H5QT2HW24NVQQF3M<br> AWS Solutions Architect Associate: 504808761</span></li>
+                            <li><span>AWS:</span><br>AWS Cloud Practioner:H5QT2HW24NVQQF3M<br> AWS Solutions Architect Associate: 504808761</li>
                             <li><span>Python</span><br>Proficiency: beginner </li>
                             <li><span>JavaScript</span><br>Proficiency: beginner </li>
                             <li><span>HTML, CSS, Java:</span><br>Proficiency: Intermediate </li>
@@ -53,7 +53,7 @@
                             <li><span>Computer Building</span><br>Proficiency: Expert </li>
                             <li><span>Desktop Support</span><br>Proficiency: Expert </li>
                             <li><span>PC component diagnostics</span><br>Proficiency: Intermediate </li>
-                            <li><span>Data Recoevry</span><br>Proficiency: Intermediate </li>
+                            <li><span>Data Recovery</span><br>Proficiency: Intermediate </li>
                             <li><span>iOS/MacOS and Windows</span><br>Proficiency: Expert </li>
                             <li><span>Problem Solving</span><br>Passion for solving problems. I am able to find issues and then solve them effectively</li>
                             <li><span>Teamwork</span><br>Love working in and with teams. Willing collaborator on projects and tasks.</li>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>IT</span><br>No current IT experience</span></li>
+                            <li><span>IT</span><br>No current IT experience</li>
                             <li><span>PJs Coffee</span><br></li>August 2022 - Present
                         </ul>
                     </div>
@@ -134,7 +134,7 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
+        function opentab(evt, tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
