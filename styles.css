@@ -1,33 +1,27 @@
-/* ====== CSS RESET & ROOT ====== */
-:root {
-  --bg-color: #0d0d0d;
-  --text-color: #ffffff;
-  --accent-color: #ff4a00;
-  --secondary-bg: #1f1f1f;
-  --font-base: 'Poppins', sans-serif;
-}
-
+/* === BASIC RESET === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-base);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === ROOT COLORS === */
+:root {
+  --bg-color: #080808;
+  --text-color: #fff;
+  --accent-color: orangered;
+  --secondary-bg: #262626;
+}
+
+/* === GLOBAL STYLES === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 a {
@@ -36,36 +30,37 @@ a {
   transition: color 0.3s ease;
 }
 
-ul {
-  list-style: none;
-}
-
-/* ====== HEADER ====== */
+/* === HEADER SECTION === */
 #header {
-  height: 100vh;
   width: 100%;
-  background: url('images/Images.jpg') center/cover no-repeat;
-  background-size: cover;
-  background-position: center; 
-}
-/* ===== NAVIGATION BAR ===== */
-nav {
+  min-height: 100vh;
+  background: url(images/Images.jpg) center/cover no-repeat;
+  padding-top: 100px; /* prevent nav overlap */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.2rem 10%;
-  background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
+  justify-content: center;
+  text-align: center;
+}
+
+/* === NAVIGATION BAR === */
+nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  backdrop-filter: blur(8px); /* Optional: adds a blur behind nav */
+  padding: 1rem 10%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
 }
 
-.marcus{
-  width: 140px;
+nav img {
+  height: 60px; /* increase or decrease as needed */
+  object-fit: contain;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -74,32 +69,33 @@ nav ul {
 
 nav ul li a {
   font-size: 1rem;
-  color: var(--text-color);
   position: relative;
-  transition: color 0.3s;
+  color: var(--text-color);
 }
 
 nav ul li a::after {
   content: '';
+  position: absolute;
   width: 0%;
   height: 2px;
-  position: absolute;
   left: 0;
   bottom: -6px;
-  background: var(--accent-color);
-  transition: 0.4s;
+  background-color: var(--accent-color);
+  transition: 0.4s ease;
 }
 
 nav ul li a:hover::after {
   width: 100%;
 }
+
+/* === HEADER TEXT === */
 .header-text {
-  padding-top: 100px;
+  font-size: 1.875rem;
 }
 
 .header-text h1 {
   font-size: 3rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 .header-text h1 span {
