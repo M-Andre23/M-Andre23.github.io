@@ -50,17 +50,19 @@ ul {
   text-align: center;
   position: relative;
 }
-
+/* ===== NAVIGATION BAR ===== */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 10%;
-  background: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem 10%;
+  background-color: rgba(0, 0, 0, 0.85); /* Slight transparency */
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(8px); /* Optional: adds a blur behind nav */
 }
 
 nav img {
@@ -68,30 +70,32 @@ nav img {
 }
 
 nav ul {
+  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 nav ul li a {
   font-size: 1rem;
+  color: var(--text-color);
   position: relative;
+  transition: color 0.3s;
 }
 
 nav ul li a::after {
   content: '';
-  position: absolute;
   width: 0%;
   height: 2px;
-  bottom: -5px;
+  position: absolute;
   left: 0;
-  background-color: var(--accent-color);
-  transition: 0.3s ease;
+  bottom: -6px;
+  background: var(--accent-color);
+  transition: 0.4s;
 }
 
 nav ul li a:hover::after {
   width: 100%;
 }
-
 .header-text {
   padding-top: 100px;
 }
