@@ -63,10 +63,9 @@ nav {
   backdrop-filter: blur(8px); /* Optional: adds a blur behind nav */
 }
 
-nav img {
-  height: 200px;
+.marcus{
+  width: 140px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
