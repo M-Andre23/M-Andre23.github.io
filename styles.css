@@ -43,8 +43,7 @@ ul {
 /* ====== HEADER ====== */
 #header {
   height: 100vh;
-  background: linear-gradient(rgba(13,13,13,0.8), rgba(13,13,13,0.8)),
-              url('images/Images.jpg') center/cover no-repeat;
+  background: url('images/Images.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +85,7 @@ nav ul li a::after {
   bottom: -5px;
   left: 0;
   background-color: var(--accent-color);
-  transition: width 0.3s ease;
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover::after {
@@ -106,15 +105,9 @@ nav ul li a:hover::after {
   color: var(--accent-color);
 }
 
-.header-text p {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
 /* ====== ABOUT ====== */
 #about {
   padding: 5rem 10%;
-  background: var(--bg-color);
 }
 
 .row {
@@ -135,7 +128,6 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--accent-color);
 }
 
 .sub-title2 {
@@ -263,7 +255,7 @@ nav ul li a:hover::after {
   background: transparent;
   color: var(--text-color);
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
@@ -274,7 +266,6 @@ nav ul li a:hover::after {
 .btn2 {
   background: var(--accent-color);
   margin-top: 1rem;
-  color: #fff;
 }
 
 /* ====== FORM ====== */
@@ -293,7 +284,6 @@ form textarea {
 #msg {
   color: #4BB543;
   font-size: 0.9rem;
-  margin-top: 0.5rem;
 }
 
 /* ====== FOOTER ====== */
@@ -301,9 +291,9 @@ form textarea {
   text-align: center;
   background: var(--secondary-bg);
   padding: 1rem 0;
+  margin-top: 2rem;
   font-size: 0.875rem;
   color: #aaa;
-  margin-top: 2rem;
 }
 
 /* ====== RESPONSIVE ====== */
