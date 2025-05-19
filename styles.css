@@ -55,14 +55,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; 
-  padding: 1rem 10%;
+  padding: 1.5rem 10%;
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
 }
 
 nav img {
@@ -71,7 +69,6 @@ nav img {
 
 nav ul {
   display: flex;
-  list-style: none;
   gap: 1.5rem;
 }
 
