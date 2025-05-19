@@ -43,12 +43,10 @@ ul {
 /* ====== HEADER ====== */
 #header {
   height: 100vh;
+  width: 100%;
   background: url('images/Images.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+  background-size: cover;
+  background-position: center; 
 }
 /* ===== NAVIGATION BAR ===== */
 nav {
