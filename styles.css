@@ -57,7 +57,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 10%;
   background: rgba(0, 0, 0, 0.6);
-  position: fixed;
+  position: static; /* or `relative` if you need positioning tweaks */
   width: 100%;
   top: 0;
   z-index: 1000;
