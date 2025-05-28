@@ -71,7 +71,7 @@ nav {
 
 nav img {
   height: 80px;
-  width: 100%;
+  width: auto;
 }
 
 nav ul {
