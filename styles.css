@@ -276,6 +276,7 @@ form textarea {
 
 /* ========== FOOTER ========== */
 .copyright {
+    width: 100%
     text-align: center;
     background: #262626;
     padding: 25px 0;
@@ -286,6 +287,7 @@ form textarea {
 .copyright i,
 .copyright a {
     color: #ff4a00;
+    text-decoration: none;
 }
 
 /* ========== RESPONSIVE ========== */
