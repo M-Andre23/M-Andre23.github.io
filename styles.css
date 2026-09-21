@@ -101,9 +101,12 @@ nav ul li a:hover::after{
 .tab-links{
     margin-right: 50px;
     font-size: 25px;
-    font-weight: 500; 
+    font-weight: 500;
     cursor: pointer;
     position: relative;
+    background: none;
+    border: 0;
+    color: inherit;
 }
 .tab-links::after{
     content: '';
@@ -252,12 +255,13 @@ form .btn2{
     margin-top: 20px;
 }
 /* ---------css for small screens------ */
-nav .fas{
+nav .menu-open,
+nav .menu-close{
     display: none;
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/images.jpg);
+        background-image: url(images/Images.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -266,34 +270,41 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fas{
+    nav .menu-open,
+    nav .menu-close{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     nav ul{
         background: orangered;
         position: fixed;
         top: 0;
-        right: -200;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
+    nav ul.open{
+        right: 0;
+    }
     nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .menu-close{
         position: absolute;
         top: 25px;
         left: 25px;
-        cursor: pointer;
     }
 }
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+#msg.error{
+    color: #ff6b6b;
 }
